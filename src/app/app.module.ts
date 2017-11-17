@@ -16,7 +16,9 @@ import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { HeroService }          from './hero.service';
 import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
-import { FoodtrucksComponent }    from './foodtrucks/foodtrucks.component';
+import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
+import { FoodtruckService }     from './foodtruck.service';
+
 
 @NgModule({
   imports: [
@@ -41,7 +43,7 @@ import { FoodtrucksComponent }    from './foodtrucks/foodtrucks.component';
     HeroSearchComponent,
     FoodtrucksComponent
   ],
-  providers: [ HeroService, MessageService ],
+  providers: [ HeroService, MessageService, FoodtruckService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

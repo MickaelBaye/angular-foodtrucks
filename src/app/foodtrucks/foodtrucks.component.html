@@ -1,1 +1,9 @@
 <h3>Foodtrucks</h3>
+
+<ul class="heroes">
+  <li *ngFor="let foodtruck of foodtrucks">
+    <a>
+      <span class="badge">{{foodtruck.id}}</span> {{foodtruck.name}}
+    </a>
+  </li>
+</ul>
