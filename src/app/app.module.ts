@@ -18,6 +18,8 @@ import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
 import { FoodtruckService }     from './foodtruck.service';
+// Angular Material
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { FoodtruckService }     from './foodtruck.service';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    // Angular Material
+    MatToolbarModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

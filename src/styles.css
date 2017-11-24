@@ -63,3 +63,5 @@ nav a.active {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
