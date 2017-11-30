@@ -18,6 +18,7 @@ import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
 import { FoodtruckService }     from './foodtruck.service';
+import { HomeComponent }  from './home/home.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { FoodtruckService }     from './foodtruck.service';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    FoodtrucksComponent
+    FoodtrucksComponent,
+    HomeComponent
   ],
   providers: [ HeroService, MessageService, FoodtruckService ],
   bootstrap: [ AppComponent ]
