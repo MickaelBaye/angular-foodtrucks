@@ -10,7 +10,11 @@ export class FoodtruckService {
 
   constructor() { }
 
-  getFoodtrucks() : Observable<Foodtruck[]> {
+  getFoodtrucks(): Observable<Foodtruck[]> {
     return of(FOODTRUCKS);
+  }
+
+  getFoodtruck(id: number): Observable<Foodtruck> {
+    return of(FOODTRUCKS.find(foodtruck => foodtruck.id === id));
   }
 }

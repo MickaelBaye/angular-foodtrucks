@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 // import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
 import { HomeComponent } from './home/home.component';
+import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   // { path: 'detail/:id', component: HeroDetailComponent },
   // { path: 'heroes', component: HeroesComponent },
   { path: 'foodtrucks', component: FoodtrucksComponent },
+  { path: 'foodtruck/:id', component: FoodtruckDetailComponent },
   { path: 'home', component: HomeComponent }
 ];
 
