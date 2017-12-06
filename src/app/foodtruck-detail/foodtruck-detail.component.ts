@@ -23,7 +23,7 @@ export class FoodtruckDetailComponent implements OnInit {
 
   getFoodtruck(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.foodtruckService.getFoodtruck(id)
+    this.foodtruckService.getFoodtruckById(id)
       .subscribe(foodtruck => this.foodtruck = foodtruck);
   }
 }

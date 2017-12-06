@@ -14,7 +14,11 @@ export class FoodtruckService {
     return of(FOODTRUCKS);
   }
 
-  getFoodtruck(id: number): Observable<Foodtruck> {
+getFoodtruckById(id: number): Observable<Foodtruck> {
     return of(FOODTRUCKS.find(foodtruck => foodtruck.id === id));
+  }
+
+  getFoodtrucksByDay(day: number): Observable<Foodtruck[]> {
+    return of(FOODTRUCKS.filter(foodtruck => foodtruck.days.some(d => d === day)));
   }
 }
