@@ -8,7 +8,10 @@ import { FoodtruckService } from './foodtruck.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'Foodtrucks';
+  week = [1, 2, 3, 4, 5];
+
   foodtrucks: Foodtruck[];
 
   constructor(private foodtruckService:FoodtruckService) {}

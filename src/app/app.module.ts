@@ -22,6 +22,7 @@ import { HomeComponent }        from './home/home.component';
 import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.component';
 import { MomentModule }         from 'angular2-moment';
 import { TodayComponent } from './today/today.component';
+import { WeekComponent } from './week/week.component';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { TodayComponent } from './today/today.component';
     FoodtrucksComponent,
     HomeComponent,
     FoodtruckDetailComponent,
-    TodayComponent
+    TodayComponent,
+    WeekComponent
   ],
   providers: [ HeroService, MessageService, FoodtruckService ],
   bootstrap: [ AppComponent ]
