@@ -20,7 +20,7 @@ import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
 import { FoodtruckService }     from './foodtruck.service';
 import { HomeComponent }        from './home/home.component';
 import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.component';
-
+import { MomentModule }         from 'angular2-moment';
 
 @NgModule({
   imports: [
@@ -28,6 +28,7 @@ import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.co
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    MomentModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

@@ -5,6 +5,9 @@
     <div class="container">
       <h1 class="display-3">{{foodtruck.name}}</h1>
       <p class="lead">{{foodtruck.subtitle}}</p>
+      <p class="lead">
+        <a *ngFor="let day of foodtruck.days" class="btn btn-secondary" href="#" role="button">{{day | amParse:'E' | amDateFormat:'dddd'}}</a>
+      </p>
     </div>
   </div>
 

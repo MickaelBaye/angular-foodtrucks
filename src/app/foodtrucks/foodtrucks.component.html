@@ -37,7 +37,7 @@
             <h4 class="card-title">{{foodtruck.name}}</h4>
             <h6 class="card-subtitle mb-2 text-muted">{{foodtruck.subtitle}}</h6>
             <p class="card-text">{{foodtruck.description}}</p>
-            <a *ngFor="let day of foodtruck.days" href="#" class="card-link">{{day}}</a>
+            <a *ngFor="let day of foodtruck.days" href="#" class="card-link">{{day | amParse:'E' | amDateFormat:'dddd'}}</a>
             <!-- <a href="#" class="card-link">Another link</a> -->
           </div>
         </div>
