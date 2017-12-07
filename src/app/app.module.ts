@@ -15,6 +15,8 @@ import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.co
 import { MomentModule }         from 'angular2-moment';
 import { TodayComponent } from './today/today.component';
 import { WeekComponent } from './week/week.component';
+import { Foodtruck } from './foodtruck';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -30,7 +32,8 @@ import { WeekComponent } from './week/week.component';
     HomeComponent,
     FoodtruckDetailComponent,
     TodayComponent,
-    WeekComponent
+    WeekComponent,
+    FooterComponent
   ],
   providers: [ FoodtruckService ],
   bootstrap: [ AppComponent ]
