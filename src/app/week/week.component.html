@@ -8,46 +8,23 @@
     </div>
   </div>
 
-  <!-- <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Les foodtrucks</h1>
-          </div>
-        </div>
-      </div> -->
-
   <div class="container">
-    <!-- Example row of columns -->
-    <div *ngFor="let foodtruck of foodtrucks" class="row">
-      <!-- <div *ngFor="let foodtruck of foodtrucks" class="col-md-4">
-            <h2>{{foodtruck.name}}</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-              nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button">View details »</a>
-            </p>
-          </div> -->
 
-      <!-- <div *ngFor="let foodtruck of foodtrucks" class="card" style="width: 20rem;"> -->
-      <!-- <div *ngFor="let foodtruck of foodtrucks" class="col-md-4"> -->
+    <div *ngFor="let foodtruck of foodtrucks" class="row">
       <div class="col-md-12">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">{{foodtruck.name}}</h4>
-            <h6 class="card-subtitle mb-2 text-muted">{{foodtruck.subtitle}}</h6>
+            <h6 class="card-subtitle mb-2 text-muted"><a href="/foodtruck/{{foodtruck.id}}">Détails</a></h6>
             <p class="card-text">{{foodtruck.description}}</p>
             <a *ngFor="let day of foodtruck.days" href="/day/{{day}}" class="card-link">{{day | amParse:'E' | amDateFormat:'dddd'}}</a>
-            <!-- <a href="#" class="card-link">Another link</a> -->
           </div>
         </div>
       </div>
-
     </div>
 
     <hr>
 
   </div>
-  <!-- /container -->
 
 </main>
