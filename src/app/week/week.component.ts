@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { FoodtruckService } from '../foodtruck.service';
 
 @Component({
-  selector: 'week',
+  selector: 'app-week',
   templateUrl: 'week.component.html',
   styleUrls: ['week.component.css']
 })

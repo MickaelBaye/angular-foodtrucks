@@ -3,7 +3,7 @@ import { Foodtruck } from '../foodtruck';
 import { FoodtruckService } from '../foodtruck.service';
 
 @Component({
-  selector: 'today',
+  selector: 'app-today',
   templateUrl: 'today.component.html',
   styleUrls: ['today.component.css']
 })

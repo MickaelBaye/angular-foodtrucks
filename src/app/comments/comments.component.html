@@ -1,0 +1,23 @@
+<main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Commentaires</h1>
+        <!-- <p class="lead">L'application <strong>Foodtrucks</strong> vous permet de savoir quels sont les foodtrucks disponibles près de vous.</p> -->
+        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li>Username : {{ (comment | async)?.username }}</li>
+          <li>Timestamp : {{ (comment | async)?.timestamp }}</li>
+          <li>Text : {{ (comment | async)?.text }}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- /container -->
+
+  </main>

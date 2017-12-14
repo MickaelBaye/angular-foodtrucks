@@ -8,15 +8,23 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent }         from './app.component';
+// Moment
+import { MomentModule }         from 'angular2-moment';
+// Firebase
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
+// Foodtrucks
 import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
 import { FoodtruckService }     from './foodtruck.service';
 import { HomeComponent }        from './home/home.component';
 import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.component';
-import { MomentModule }         from 'angular2-moment';
 import { TodayComponent } from './today/today.component';
 import { WeekComponent } from './week/week.component';
 import { Foodtruck } from './foodtruck';
 import { FooterComponent } from './footer/footer.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   imports: [
@@ -24,7 +32,9 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    MomentModule
+    MomentModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   declarations: [
     AppComponent,
@@ -33,9 +43,10 @@ import { FooterComponent } from './footer/footer.component';
     FoodtruckDetailComponent,
     TodayComponent,
     WeekComponent,
-    FooterComponent
+    FooterComponent,
+    CommentsComponent
   ],
-  providers: [ FoodtruckService ],
+  providers: [ AngularFireAuth, FoodtruckService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

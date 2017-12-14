@@ -4,7 +4,7 @@ import { FoodtruckService } from '../foodtruck.service';
 import { FOODTRUCKS } from '../mock-foodtrucks';
 
 @Component({
-  selector: 'foodtrucks',
+  selector: 'app-foodtrucks',
   templateUrl: 'foodtrucks.component.html',
   styleUrls: [ 'foodtrucks.component.css' ]
 })

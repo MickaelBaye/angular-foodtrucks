@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { FoodtruckService } from '../foodtruck.service';
 
 @Component({
-  selector: 'foodtruck-detail',
+  selector: 'app-foodtruck-detail',
   templateUrl: 'foodtruck-detail.component.html',
   styleUrls: ['foodtruck-detail.component.css']
 })
