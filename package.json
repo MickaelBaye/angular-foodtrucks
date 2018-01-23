@@ -1,14 +1,16 @@
 {
-  "name": "angular-io-example",
+  "name": "foodtrucks",
   "version": "1.0.0",
   "private": true,
-  "description": "Example project from an angular.io guide.",
+  "description": "Angular and Node.js project",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
+    "build": "ng build",
     "test": "ng test",
-    "lint": "tslint ./src/**/*.ts -t verbose",
-    "e2e": "ng e2e"
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall": "ng build"
   },
   "keywords": [],
   "author": "",
@@ -35,6 +37,9 @@
     "moment": "^2.19.3",
     "rxjs": "^5.5.0",
     "web-animations-js": "^2.3.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
