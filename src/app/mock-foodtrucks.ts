@@ -7,7 +7,9 @@ export const FOODTRUCKS: Foodtruck[] = [
     days : [1, 3],
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
-    subtitle : "Card subtitle"
+    subtitle : "Card subtitle",
+    mealList: [],
+    menuList: []
 	},
 	{
 		id : 1,
@@ -15,7 +17,9 @@ export const FOODTRUCKS: Foodtruck[] = [
     days : [2],
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
-    subtitle : "Card subtitle"
+    subtitle : "Card subtitle",
+    mealList: [],
+    menuList: []
 	},
 	{
 		id : 2,
@@ -23,7 +27,9 @@ export const FOODTRUCKS: Foodtruck[] = [
     days : [2],
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
-    subtitle : "Card subtitle"
+    subtitle : "Card subtitle",
+    mealList: [],
+    menuList: []
 	},
 	{
 		id : 3,
@@ -31,7 +37,9 @@ export const FOODTRUCKS: Foodtruck[] = [
     days : [3, 5],
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
-    subtitle : "Card subtitle"
+    subtitle : "Card subtitle",
+    mealList: [],
+    menuList: []
 	},
 	{
 		id : 4,
@@ -39,7 +47,9 @@ export const FOODTRUCKS: Foodtruck[] = [
     days : [4],
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
-    subtitle : "Card subtitle"
+    subtitle : "Card subtitle",
+    mealList: [],
+    menuList: []
 	},
 	{
 		id : 5,
@@ -47,7 +57,9 @@ export const FOODTRUCKS: Foodtruck[] = [
     days : [4],
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
-    subtitle : "Card subtitle"
+    subtitle : "Card subtitle",
+    mealList: [],
+    menuList: []
 	},
 	{
 		id : 6,
@@ -55,6 +67,8 @@ export const FOODTRUCKS: Foodtruck[] = [
     days : [5],
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
-    subtitle : "Card subtitle"
+    subtitle : "Card subtitle",
+    mealList: [],
+    menuList: []
 	}
 ];
