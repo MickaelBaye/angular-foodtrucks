@@ -1,4 +1,5 @@
 var express = require("express");
+const path = require('path');
 var bodyParser = require("body-parser");
 // var mongodb = require("mongodb");
 // var ObjectID = mongodb.ObjectID;
@@ -11,6 +12,12 @@ app.use(bodyParser.json());
 // Create link to Angular build directory
 var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
+
+// Catch all other routes and return the index file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+
 
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 // var db;
