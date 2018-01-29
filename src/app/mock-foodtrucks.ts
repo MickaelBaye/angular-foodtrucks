@@ -8,8 +8,39 @@ export const FOODTRUCKS: Foodtruck[] = [
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
     subtitle : "Card subtitle",
-    mealList: [],
-    menuList: []
+    mealList: [{
+      id : 0,
+      name : "Plat 0",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 1,
+      name : "Plat 1",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 2,
+      name : "Plat 2",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    }],
+    menuList: [{
+      id : 0,
+      name : "Menu 0",
+      price : 10
+    },
+    {
+      id : 1,
+      name : "Menu 1",
+      price : 20
+    },
+    {
+      id : 2,
+      name : "Menu 0",
+      price : 30
+    }]
 	},
 	{
 		id : 1,
@@ -28,8 +59,39 @@ export const FOODTRUCKS: Foodtruck[] = [
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
     subtitle : "Card subtitle",
-    mealList: [],
-    menuList: []
+    mealList: [{
+      id : 0,
+      name : "Plat 0",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 1,
+      name : "Plat 1",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 2,
+      name : "Plat 2",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    }],
+    menuList: [{
+      id : 0,
+      name : "Menu 0",
+      price : 10
+    },
+    {
+      id : 1,
+      name : "Menu 1",
+      price : 20
+    },
+    {
+      id : 2,
+      name : "Menu 0",
+      price : 30
+    }]
 	},
 	{
 		id : 3,
@@ -38,8 +100,39 @@ export const FOODTRUCKS: Foodtruck[] = [
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
     subtitle : "Card subtitle",
-    mealList: [],
-    menuList: []
+    mealList: [{
+      id : 0,
+      name : "Plat 0",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 1,
+      name : "Plat 1",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 2,
+      name : "Plat 2",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    }],
+    menuList: [{
+      id : 0,
+      name : "Menu 0",
+      price : 10
+    },
+    {
+      id : 1,
+      name : "Menu 1",
+      price : 20
+    },
+    {
+      id : 2,
+      name : "Menu 0",
+      price : 30
+    }]
 	},
 	{
 		id : 4,
@@ -48,8 +141,39 @@ export const FOODTRUCKS: Foodtruck[] = [
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
     subtitle : "Card subtitle",
-    mealList: [],
-    menuList: []
+    mealList: [{
+      id : 0,
+      name : "Plat 0",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 1,
+      name : "Plat 1",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 2,
+      name : "Plat 2",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    }],
+    menuList: [{
+      id : 0,
+      name : "Menu 0",
+      price : 10
+    },
+    {
+      id : 1,
+      name : "Menu 1",
+      price : 20
+    },
+    {
+      id : 2,
+      name : "Menu 0",
+      price : 30
+    }]
 	},
 	{
 		id : 5,
@@ -58,8 +182,39 @@ export const FOODTRUCKS: Foodtruck[] = [
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
     subtitle : "Card subtitle",
-    mealList: [],
-    menuList: []
+    mealList: [{
+      id : 0,
+      name : "Plat 0",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 1,
+      name : "Plat 1",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 2,
+      name : "Plat 2",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    }],
+    menuList: [{
+      id : 0,
+      name : "Menu 0",
+      price : 10
+    },
+    {
+      id : 1,
+      name : "Menu 1",
+      price : 20
+    },
+    {
+      id : 2,
+      name : "Menu 0",
+      price : 30
+    }]
 	},
 	{
 		id : 6,
@@ -68,7 +223,38 @@ export const FOODTRUCKS: Foodtruck[] = [
     description : "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum\
     nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
     subtitle : "Card subtitle",
-    mealList: [],
-    menuList: []
+    mealList: [{
+      id : 0,
+      name : "Plat 0",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 1,
+      name : "Plat 1",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    },
+    {
+      id : 2,
+      name : "Plat 2",
+      categoryList : ["Catégorie 0", "Catégorie 1", "Catégorie 2"],
+      ingredientList : ["Ingrédient 0", "Ingrédient 1", "Ingrédient 2"]
+    }],
+    menuList: [{
+      id : 0,
+      name : "Menu 0",
+      price : 10
+    },
+    {
+      id : 1,
+      name : "Menu 1",
+      price : 20
+    },
+    {
+      id : 2,
+      name : "Menu 0",
+      price : 30
+    }]
 	}
 ];

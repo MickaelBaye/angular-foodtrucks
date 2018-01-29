@@ -17,28 +17,44 @@
 
   <div class="container">
     <h1>Menus</h1>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Menu</th>
+          <th scope="col">Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let menu of foodtruck.menuList">
+          <th scope="row">{{menu.id}}</th>
+          <td>{{menu.name}}</td>
+          <td>{{menu.price}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="container">
     <h1>Plats</h1>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Plat</th>
+          <th scope="col">Ingrédients</th>
+          <th scope="col">Catégories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let meal of foodtruck.mealList">
+          <th scope="row">{{meal.id}}</th>
+          <td>{{meal.name}}</td>
+          <td>{{meal.ingredientList}}</td>
+          <td>{{meal.categoryList}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </main>
