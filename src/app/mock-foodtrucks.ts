@@ -40,7 +40,18 @@ export const FOODTRUCKS: Foodtruck[] = [
       id : 2,
       name : "Menu 0",
       price : 30
-    }]
+    }],
+    contact: {
+      name : "Name",
+      address : "Address",
+      phone : "02 02 02 02 02",
+      website : "http://www.website.com/",
+      social : {
+        facebook: "http://www.facebook.com/",
+        twitter: "http://www.twitter.com/",
+        googleplus: "http://www.googleplus.com/"
+      }
+    }
 	},
 	{
 		id : 1,
@@ -81,7 +92,18 @@ export const FOODTRUCKS: Foodtruck[] = [
       id : 2,
       name : "Menu 0",
       price : 30
-    }]
+    }],
+    contact: {
+      name : "Name",
+      address : "Address",
+      phone : "02 02 02 02 02",
+      website : "http://www.website.com/",
+      social : {
+        facebook: "http://www.facebook.com/",
+        twitter: "http://www.twitter.com/",
+        googleplus: "http://www.googleplus.com/"
+      }
+    }
 	},
 	{
 		id : 2,
@@ -122,7 +144,18 @@ export const FOODTRUCKS: Foodtruck[] = [
       id : 2,
       name : "Menu 0",
       price : 30
-    }]
+    }],
+    contact: {
+      name : "Name",
+      address : "Address",
+      phone : "02 02 02 02 02",
+      website : "http://www.website.com/",
+      social : {
+        facebook: "http://www.facebook.com/",
+        twitter: "http://www.twitter.com/",
+        googleplus: "http://www.googleplus.com/"
+      }
+    }
 	},
 	{
 		id : 3,
@@ -163,7 +196,18 @@ export const FOODTRUCKS: Foodtruck[] = [
       id : 2,
       name : "Menu 0",
       price : 30
-    }]
+    }],
+    contact: {
+      name : "Name",
+      address : "Address",
+      phone : "02 02 02 02 02",
+      website : "http://www.website.com/",
+      social : {
+        facebook: "http://www.facebook.com/",
+        twitter: "http://www.twitter.com/",
+        googleplus: "http://www.googleplus.com/"
+      }
+    }
 	},
 	{
 		id : 4,
@@ -204,7 +248,18 @@ export const FOODTRUCKS: Foodtruck[] = [
       id : 2,
       name : "Menu 0",
       price : 30
-    }]
+    }],
+    contact: {
+      name : "Name",
+      address : "Address",
+      phone : "02 02 02 02 02",
+      website : "http://www.website.com/",
+      social : {
+        facebook: "http://www.facebook.com/",
+        twitter: "http://www.twitter.com/",
+        googleplus: "http://www.googleplus.com/"
+      }
+    }
 	},
 	{
 		id : 5,
@@ -245,7 +300,18 @@ export const FOODTRUCKS: Foodtruck[] = [
       id : 2,
       name : "Menu 0",
       price : 30
-    }]
+    }],
+    contact: {
+      name : "Name",
+      address : "Address",
+      phone : "02 02 02 02 02",
+      website : "http://www.website.com/",
+      social : {
+        facebook: "http://www.facebook.com/",
+        twitter: "http://www.twitter.com/",
+        googleplus: "http://www.googleplus.com/"
+      }
+    }
 	},
 	{
 		id : 6,
@@ -286,6 +352,17 @@ export const FOODTRUCKS: Foodtruck[] = [
       id : 2,
       name : "Menu 0",
       price : 30
-    }]
+    }],
+    contact: {
+      name : "Name",
+      address : "Address",
+      phone : "02 02 02 02 02",
+      website : "http://www.website.com/",
+      social : {
+        facebook: "http://www.facebook.com/",
+        twitter: "http://www.twitter.com/",
+        googleplus: "http://www.googleplus.com/"
+      }
+    }
 	}
 ];

@@ -1,5 +1,6 @@
 import { Meal } from "./meal";
 import { Menu } from "./menu";
+import { Contact } from "./contact";
 
 export class Foodtruck {
   id: number;
@@ -9,4 +10,5 @@ export class Foodtruck {
   subtitle: string;
   menuList: Menu[];
   mealList: Meal[];
+  contact: Contact;
 }
