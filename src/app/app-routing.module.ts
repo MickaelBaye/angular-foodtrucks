@@ -9,13 +9,13 @@ import { WeekComponent } from './week/week.component';
 import { CommentsComponent } from './comments/comments.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'foodtrucks', component: FoodtrucksComponent },
-  { path: 'foodtruck/:id', component: FoodtruckDetailComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'today', component: TodayComponent },
-  { path: 'day/:id', component: WeekComponent },
-  { path: 'comments', component: CommentsComponent }
+  { path: '', redirectTo: 'app/home', pathMatch: 'full' },
+  { path: 'app/foodtrucks', component: FoodtrucksComponent },
+  { path: 'app/foodtruck/:id', component: FoodtruckDetailComponent },
+  { path: 'app/home', component: HomeComponent },
+  { path: 'app/today', component: TodayComponent },
+  { path: 'app/day/:id', component: WeekComponent },
+  { path: 'app/comments', component: CommentsComponent }
 ];
 
 @NgModule({
