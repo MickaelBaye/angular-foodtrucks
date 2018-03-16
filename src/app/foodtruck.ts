@@ -3,7 +3,7 @@ import { Menu } from "./menu";
 import { Contact } from "./contact";
 
 export class Foodtruck {
-  id: number;
+  _id?: string;
   name: string;
   days: number[];
   description: string;

@@ -25,6 +25,7 @@ import { WeekComponent } from './week/week.component';
 import { Foodtruck } from './foodtruck';
 import { FooterComponent } from './footer/footer.component';
 import { CommentsComponent } from './comments/comments.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { CommentsComponent } from './comments/comments.component';
     HttpClientModule,
     MomentModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    HttpModule
   ],
   declarations: [
     AppComponent,

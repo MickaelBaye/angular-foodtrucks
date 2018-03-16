@@ -22,10 +22,16 @@ export class TodayComponent implements OnInit {
   }
 
   getFoodtrucks() : void {
-    this.foodtruckService.getFoodtrucks().subscribe(foodtrucks => this.foodtrucks = foodtrucks);
+    // this.foodtruckService.getFoodtrucks().subscribe(foodtrucks => this.foodtrucks = foodtrucks);
+    this.foodtruckService.getFoodtrucks().then((fs: Foodtruck[]) => {
+      this.foodtrucks = fs;
+    });
   }
 
   getFoodtrucksByDay(day: number) : void {
-    this.foodtruckService.getFoodtrucksByDay(day).subscribe(foodtrucks => this.foodtrucks = foodtrucks);
+    // this.foodtruckService.getFoodtrucksByDay(day).subscribe(foodtrucks => this.foodtrucks = foodtrucks);
+    this.foodtruckService.getFoodtrucks().then((fs: Foodtruck[]) => {
+      this.foodtrucks = fs;
+    });
   }
 }

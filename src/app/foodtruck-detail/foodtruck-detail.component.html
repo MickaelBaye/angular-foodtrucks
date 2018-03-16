@@ -6,7 +6,7 @@
       <h1 class="display-3">{{foodtruck.name}}</h1>
       <p class="lead">{{foodtruck.subtitle}}</p>
       <p class="lead">
-        <a *ngFor="let day of foodtruck.days" class="btn btn-secondary" href="/day/{{day}}" role="button">{{day | amParse:'E' | amDateFormat:'dddd'}}</a>
+        <a *ngFor="let day of foodtruck.days" class="btn btn-secondary" href="/app/day/{{day}}" role="button">{{day | amParse:'E' | amDateFormat:'dddd'}}</a>
       </p>
     </div>
   </div>
@@ -26,8 +26,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let menu of foodtruck.menuList">
-          <th scope="row">{{menu.id}}</th>
+        <tr *ngFor="let menu of foodtruck.menuList ; index as i">
+          <th scope="row">{{i}}</th>
           <td>{{menu.name}}</td>
           <td>{{menu.price}}</td>
         </tr>
@@ -47,8 +47,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let meal of foodtruck.mealList">
-          <th scope="row">{{meal.id}}</th>
+        <tr *ngFor="let meal of foodtruck.mealList; index as i">
+          <th scope="row">{{i}}</th>
           <td>{{meal.name}}</td>
           <td>{{meal.ingredientList}}</td>
           <td>{{meal.categoryList}}</td>

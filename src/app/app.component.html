@@ -22,7 +22,7 @@
             Foodtrucks
           </a>
           <div class="dropdown-menu" aria-labelledby="foodtruckDropdown">
-            <a *ngFor="let foodtruck of foodtrucks" class="dropdown-item" href="/app/foodtruck/{{foodtruck.id}}">{{foodtruck.name}}</a>
+            <a *ngFor="let foodtruck of foodtrucks" class="dropdown-item" href="/app/foodtruck/{{foodtruck._id}}">{{foodtruck.name}}</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/app/foodtrucks">Tous</a>
           </div>

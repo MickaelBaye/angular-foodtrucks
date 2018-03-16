@@ -21,6 +21,9 @@ export class AppComponent {
   }
 
   getFoodtrucks() : void {
-    this.foodtruckService.getFoodtrucks().subscribe(FOODTRUCKS => this.foodtrucks = FOODTRUCKS);
+    // this.foodtruckService.getFoodtrucks().subscribe(FOODTRUCKS => this.foodtrucks = FOODTRUCKS);
+    this.foodtruckService.getFoodtrucks().then((fs: Foodtruck[]) => {
+      this.foodtrucks = fs;
+    });
   }
 }

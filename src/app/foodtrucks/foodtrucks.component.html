@@ -15,9 +15,9 @@
           <div class="card-body">
             <h4 class="card-title">{{foodtruck.name}}</h4>
             <!-- <h6 class="card-subtitle mb-2 text-muted">{{foodtruck.subtitle}}</h6> -->
-            <h6 class="card-subtitle mb-2 text-muted"><a href="/foodtruck/{{foodtruck.id}}">Détails</a></h6>
+            <h6 class="card-subtitle mb-2 text-muted"><a href="/app/foodtruck/{{foodtruck._id}}">Détails</a></h6>
             <p class="card-text">{{foodtruck.description}}</p>
-            <a *ngFor="let day of foodtruck.days" href="/day/{{day}}" class="card-link">{{day | amParse:'E' | amDateFormat:'dddd'}}</a>
+            <a *ngFor="let day of foodtruck.days" href="/app/day/{{day}}" class="card-link">{{day | amParse:'E' | amDateFormat:'dddd'}}</a>
           </div>
         </div>
       </div>
