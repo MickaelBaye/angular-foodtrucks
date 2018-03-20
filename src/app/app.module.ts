@@ -16,15 +16,14 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 // Foodtrucks
-import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
-import { FoodtruckService }     from './foodtruck.service';
-import { HomeComponent }        from './home/home.component';
-import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.component';
-import { TodayComponent } from './today/today.component';
-import { WeekComponent } from './week/week.component';
-import { Foodtruck } from './foodtruck';
-import { FooterComponent } from './footer/footer.component';
-import { CommentsComponent } from './comments/comments.component';
+import { FoodtrucksComponent }  from './components/foodtrucks/foodtrucks.component';
+import { FoodtruckService }     from './services/foodtruck.service';
+import { HomeComponent }        from './components/home/home.component';
+import { FoodtruckDetailComponent } from './components/foodtruck-detail/foodtruck-detail.component';
+import { TodayComponent } from './components/today/today.component';
+import { WeekComponent } from './components/week/week.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CommentsComponent } from './components/comments/comments.component';
 import { HttpModule } from '@angular/http';
 
 @NgModule({

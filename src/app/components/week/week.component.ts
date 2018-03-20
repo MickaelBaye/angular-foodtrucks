@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Foodtruck } from '../foodtruck';
+import { Foodtruck } from '../../model/foodtruck';
 import { ActivatedRoute } from '@angular/router';
-import { FoodtruckService } from '../foodtruck.service';
+import { FoodtruckService } from '../../services/foodtruck.service';
 
 @Component({
   selector: 'app-week',

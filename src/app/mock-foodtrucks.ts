@@ -1,4 +1,4 @@
-import { Foodtruck } from './foodtruck';
+import { Foodtruck } from './model/foodtruck';
 
 export const FOODTRUCKS: Foodtruck[] = [
   {

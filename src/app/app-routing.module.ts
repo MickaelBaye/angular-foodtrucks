@@ -1,12 +1,12 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { FoodtrucksComponent }  from './foodtrucks/foodtrucks.component';
-import { HomeComponent } from './home/home.component';
-import { FoodtruckDetailComponent } from './foodtruck-detail/foodtruck-detail.component';
-import { TodayComponent } from './today/today.component';
-import { WeekComponent } from './week/week.component';
-import { CommentsComponent } from './comments/comments.component';
+import { FoodtrucksComponent }  from './components/foodtrucks/foodtrucks.component';
+import { HomeComponent } from './components/home/home.component';
+import { FoodtruckDetailComponent } from './components/foodtruck-detail/foodtruck-detail.component';
+import { TodayComponent } from './components/today/today.component';
+import { WeekComponent } from './components/week/week.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'app/home', pathMatch: 'full' },

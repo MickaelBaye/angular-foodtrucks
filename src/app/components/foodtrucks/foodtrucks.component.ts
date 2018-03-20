@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Foodtruck } from '../foodtruck';
-import { FoodtruckService } from '../foodtruck.service';
-import { FOODTRUCKS } from '../mock-foodtrucks';
+import { Foodtruck } from '../../model/foodtruck';
+import { FoodtruckService } from '../../services/foodtruck.service';
 
 @Component({
   selector: 'app-foodtrucks',

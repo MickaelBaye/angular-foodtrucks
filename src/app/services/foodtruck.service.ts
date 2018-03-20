@@ -3,8 +3,8 @@ import { Http, Response } from '@angular/http';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import 'rxjs/add/operator/toPromise';
 
-import { Foodtruck } from './foodtruck';
-import { FOODTRUCKS } from './mock-foodtrucks';
+import { Foodtruck } from '../model/foodtruck';
+import { FOODTRUCKS } from '../mock-foodtrucks';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
