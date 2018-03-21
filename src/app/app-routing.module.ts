@@ -7,6 +7,7 @@ import { FoodtruckDetailComponent } from './components/foodtruck-detail/foodtruc
 import { TodayComponent } from './components/today/today.component';
 import { WeekComponent } from './components/week/week.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'app/home', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'app/home', component: HomeComponent },
   { path: 'app/today', component: TodayComponent },
   { path: 'app/day/:id', component: WeekComponent },
-  { path: 'app/comments', component: CommentsComponent }
+  { path: 'app/comments', component: CommentsComponent },
+  { path: 'app/admin', component: AdminComponent },
 ];
 
 @NgModule({

@@ -2,6 +2,7 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
@@ -24,7 +25,8 @@ import { TodayComponent } from './components/today/today.component';
 import { WeekComponent } from './components/week/week.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CommentsComponent } from './components/comments/comments.component';
-import { HttpModule } from '@angular/http';
+
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   imports: [
@@ -45,7 +47,8 @@ import { HttpModule } from '@angular/http';
     TodayComponent,
     WeekComponent,
     FooterComponent,
-    CommentsComponent
+    CommentsComponent,
+    AdminComponent
   ],
   providers: [ AngularFireAuth, FoodtruckService ],
   bootstrap: [ AppComponent ]
