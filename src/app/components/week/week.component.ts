@@ -24,8 +24,7 @@ export class WeekComponent implements OnInit {
   }
 
   getFoodtrucksByDay() : void {
-    // this.foodtruckService.getFoodtrucksByDay(this.day).subscribe(foodtrucks => this.foodtrucks = foodtrucks);
-    this.foodtruckService.getFoodtrucks().then((fs: Foodtruck[]) => {
+    this.foodtruckService.getFoodtrucksByDay(this.day.toString()).then((fs: Foodtruck[]) => {
       this.foodtrucks = fs;
     });
   }

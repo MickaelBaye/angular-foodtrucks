@@ -110,3 +110,14 @@ app.delete("/api/foodtrucks/:id", function(req, res) {
     }
   });
 });
+
+app.get("/api/foodtrucks/day/:day", function(req, res) {
+  const day = +req.params.day;
+  db.collection(FOODTRUCKS_COLLECTION).find({ days: day }).toArray(function(err, docs) {
+    if (err) {
+      handleError(res, err.message, "Failed to get foodtruck by day");
+    } else {
+      res.status(200).json(docs);
+    }
+  });
+});

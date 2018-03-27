@@ -75,21 +75,17 @@ export class FoodtruckService {
       .catch(this.handleError);
   }
 
+  // get("/api/foodtrucks")
+  getFoodtrucksByDay(day: String): Promise<void | Foodtruck[]> {
+    return this.http.get(this.foodtrucksUrl + '/day/' + day)
+      .toPromise()
+      .then(response => response.json() as Foodtruck[])
+      .catch(this.handleError);
+  }
+
   private handleError (error: any) {
     let errMsg = (error.message) ? error.message :
     error.status ? `${error.status} - ${error.statusText}` : 'Server error';
     console.error(errMsg); // log to console instead
   }
-
-  // getFoodtrucks(): Observable<Foodtruck[]> {
-  //   return of(FOODTRUCKS);
-  // }
-
-  // getFoodtruckById(id: number): Observable<Foodtruck> {
-  //   return of(FOODTRUCKS.find(foodtruck => foodtruck.id === id));
-  // }
-
-  // getFoodtrucksByDay(day: number): Observable<Foodtruck[]> {
-  //   return of(FOODTRUCKS.filter(foodtruck => foodtruck.days.some(d => d === day)));
-  // }
 }

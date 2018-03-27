@@ -17,20 +17,17 @@ export class TodayComponent implements OnInit {
 
   ngOnInit() {
     this.today = new Date();
-    // this.getFoodtrucks();
     this.getFoodtrucksByDay(this.today.getDay());
   }
 
   getFoodtrucks() : void {
-    // this.foodtruckService.getFoodtrucks().subscribe(foodtrucks => this.foodtrucks = foodtrucks);
     this.foodtruckService.getFoodtrucks().then((fs: Foodtruck[]) => {
       this.foodtrucks = fs;
     });
   }
 
   getFoodtrucksByDay(day: number) : void {
-    // this.foodtruckService.getFoodtrucksByDay(day).subscribe(foodtrucks => this.foodtrucks = foodtrucks);
-    this.foodtruckService.getFoodtrucks().then((fs: Foodtruck[]) => {
+    this.foodtruckService.getFoodtrucksByDay(day.toString()).then((fs: Foodtruck[]) => {
       this.foodtrucks = fs;
     });
   }
