@@ -27,6 +27,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CommentsComponent } from './components/comments/comments.component';
 
 import { AdminComponent } from './components/admin/admin.component';
+import { AdminFoodtrucksComponent } from './components/admin/foodtrucks/admin-foodtrucks.component';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { AdminComponent } from './components/admin/admin.component';
     WeekComponent,
     FooterComponent,
     CommentsComponent,
-    AdminComponent
+    AdminComponent,
+    AdminFoodtrucksComponent
   ],
   providers: [ AngularFireAuth, FoodtruckService ],
   bootstrap: [ AppComponent ]
