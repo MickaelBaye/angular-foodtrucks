@@ -9,6 +9,7 @@ import { WeekComponent } from './components/week/week.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AdminFoodtrucksComponent } from './components/admin/foodtrucks/admin-foodtrucks.component';
+import { AdminFoodtrucksUpdateComponent } from './components/admin/foodtrucks/update/admin-foodtrucks-update.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'app/home', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'app/day/:id', component: WeekComponent },
   { path: 'app/comments', component: CommentsComponent },
   { path: 'app/admin', component: AdminComponent },
-  { path: 'app/admin/foodtrucks', component: AdminFoodtrucksComponent }
+  { path: 'app/admin/foodtrucks', component: AdminFoodtrucksComponent },
+  { path: 'app/admin/foodtrucks/update/:id', component: AdminFoodtrucksUpdateComponent }
 ];
 
 @NgModule({

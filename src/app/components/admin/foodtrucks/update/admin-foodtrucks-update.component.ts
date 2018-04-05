@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { Foodtruck } from '../../model/foodtruck';
 import { ActivatedRoute } from '@angular/router';
-import { FoodtruckService } from '../../services/foodtruck.service';
+import { FormsModule } from '@angular/forms';
+
+import { Foodtruck } from '../../../../model/foodtruck';
+import { FoodtruckService } from '../../../../services/foodtruck.service';
 
 @Component({
-  selector: 'app-foodtruck-detail',
-  templateUrl: 'foodtruck-detail.component.html',
-  styleUrls: ['foodtruck-detail.component.css']
+  selector: 'app-admin-foodtrucks-update',
+  templateUrl: 'admin-foodtrucks-update.component.html',
+  styleUrls: ['admin-foodtrucks-update.component.css']
 })
 
-export class FoodtruckDetailComponent implements OnInit {
+export class AdminFoodtrucksUpdateComponent implements OnInit {
 
   foodtruck: Foodtruck;
+  week = [1, 2, 3, 4, 5];
 
   constructor(
     private route: ActivatedRoute,
@@ -27,4 +30,5 @@ export class FoodtruckDetailComponent implements OnInit {
       this.foodtruck = f;
     });
   }
+
 }
